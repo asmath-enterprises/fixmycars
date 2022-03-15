@@ -2,7 +2,7 @@
 	Custom css
 ==========================*/
 /* test */
-.head {
+/* .head {
   margin-top: 50px;
   text-align: center;
   font-family: "Roboto";
@@ -52,12 +52,49 @@ p {
 .div-head {
   background-color: white;
   margin-top: 30px;
-}
+} */
 
 /*Meet & ask section css*/
 .header-sidenav .header-nav.full-sidenav .nav > li > a:hover {
   color: #ee3131;
 }
+.mini-header-bar {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 40px;
+  min-height: 40px;
+  background: #172228;
+  margin: 0 -20px;
+  padding: 0 20px;
+}
+.sideone {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.call {
+  padding-left: 25px;
+}
+.sideone a {
+  font-size: 20px;
+
+  color: white;
+}
+.sideone a:hover {
+  color: #ee3131;
+}
+.sideone p {
+  font-size: 20px;
+  padding-top: 25px;
+  padding-left: 25px;
+  color: white;
+}
+
 .process {
   padding: 30px;
 }
@@ -3576,11 +3613,15 @@ button:focus {
 .header-sidenav .extra-nav .extra-cell {
   margin: 0;
 }
-
+.dlab-social-icon li {
+  padding-left: 10px;
+  font-size: 16px;
+  color: white;
+}
 .menu-aside .menu-btn {
   padding: 0;
   width: 100px;
-  height: 100px;
+  height: 101px;
   text-align: center;
   display: flex;
   background-color: var(--primary);
@@ -3589,7 +3630,7 @@ button:focus {
   align-items: center;
   position: fixed;
   z-index: 48;
-  top: 0;
+  top: 40px;
 }
 
 .menu-aside .menu-icon-in {
@@ -3847,7 +3888,7 @@ button:focus {
 
 /* Vehicle Services */
 
-.vehicle-box.style1 .left-info:after {
+/* .vehicle-box.style1 .left-info:after {
   content: attr(data-name);
   position: absolute;
   color: #fff;
@@ -3862,8 +3903,102 @@ button:focus {
   width: 180px;
   z-index: -1;
   opacity: 0.2;
+} */
+.form-style-9 {
+  max-width: 450px;
+  background: #fafafa;
+  padding: 30px;
+  margin: 50px auto;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  border: 6px solid none;
 }
-
+.form-style-9 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.form-style-9 ul li {
+  display: block;
+  margin-bottom: 10px;
+  min-height: 35px;
+}
+.form-style-9 ul li .field-style {
+  border: 0;
+  background-image: linear-gradient(#e91e63, #e91e63),
+    linear-gradient(#d2d2d2, #d2d2d2);
+  background-size: 0 2px, 100% 1px;
+  background-repeat: no-repeat;
+  background-position: center bottom, center calc(100% - 1px);
+  background-color: transparent;
+  transition: background 0s ease-out;
+  float: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-weight: 400;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 8px;
+  outline: none;
+  /* border: 1px solid #b0cfe0; */
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.form-style-9 ul li .field-style:focus {
+  box-shadow: 0 0 5px #b0cfe0;
+  border: 1px solid #b0cfe0;
+}
+.form-style-9 ul li .field-split {
+  width: 49%;
+}
+.form-style-9 ul li .field-full {
+  width: 100%;
+}
+.form-style-9 ul li input.align-left {
+  float: left;
+  border: 0;
+  background-image: linear-gradient(#e91e63, #e91e63),
+    linear-gradient(#d2d2d2, #d2d2d2);
+  background-size: 0 2px, 100% 1px;
+  background-repeat: no-repeat;
+  background-position: center bottom, center calc(100% - 1px);
+  background-color: transparent;
+  transition: background 0s ease-out;
+  float: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-weight: 400;
+}
+.form-style-9 ul li input.align-right {
+  float: right;
+}
+.form-style-9 ul li textarea {
+  width: 100%;
+  height: 100px;
+}
+.form-style-9 ul li input[type="button"],
+.form-style-9 ul li input[type="submit"] {
+  -moz-box-shadow: inset 0px 1px 0px 0px #3985b1;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #3985b1;
+  box-shadow: inset 0px 1px 0px 0px #3985b1;
+  background-color: #216288;
+  border: 1px solid #17445e;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 8px 18px;
+  float: right;
+  text-decoration: none;
+  font: 12px Arial, Helvetica, sans-serif;
+}
+.form-style-9 ul li input[type="button"]:hover,
+.form-style-9 ul li input[type="submit"]:hover {
+  background: linear-gradient(to bottom, #2d77a2 5%, #337da8 100%);
+  background-color: #28739e;
+}
 .vehicle-box.style1 .left-info {
   display: flex;
   flex-direction: column;
@@ -4599,6 +4734,9 @@ button:focus {
 }
 
 @media only screen and (max-width: 767px) {
+  .extra-nav {
+    display: none;
+  }
   .creative-banner-two .bottom-aside .slide-social li {
     margin: 0 10px;
   }
@@ -4621,6 +4759,14 @@ button:focus {
   }
 }
 
+@media only screen and (max-width: 678px) {
+  .mini-header-bar {
+    display: none;
+  }
+  .menu-aside .menu-btn {
+    top: 0;
+  }
+}
 @media only screen and (max-width: 360px) {
   .vehicle-box.style2 .vehicle-img {
     width: 250px;
