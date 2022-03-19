@@ -33,11 +33,13 @@
       type="text/css"
       href="plugins/rangeslider/rangeslider.css"
     />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <script
       src="https://kit.fontawesome.com/61dc5b3682.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body id="bg">
     <!-- <div id="loading-area"></div> -->
 
@@ -56,6 +58,9 @@
                 <p>Call to Book Now :</p>
                 <a class="call" href="tel:+919108826199">+91 9108826199/</a>
                 <a href="tel:+917090009537"> +91 7090009537</a>
+              </div>
+              <div class="sidetwo">
+                <a href="#">Offer</a> | <a href="#">Book online Appoinment</a>
               </div>
             </div>
             <div style="padding-left: 80px; padding-right: 100px">
@@ -161,106 +166,107 @@
       <!-- Header end -->
       <!-- Hero section start -->
       <div class="page-content bg-white">
-        <div class="creative-banner-one" id="home">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div
-                  class="vehicle-box style1"
-                  style="background-image: url(images/main-slider/slide11.jpg)"
-                >
-                  <div class="left-info" data-name="n">
-                    <div class="top-info">
-                      <h2 class="title" data-swiper-parallax="-500">
-                        Monsoon Bonanza
-                      </h2>
-                      <h3 class="main-title" data-swiper-parallax="-400">
+        <div class="hero-wrap">
+          <div class="hero-mask opacity-8 bg-dark"></div>
+          <div
+            class="hero-bg hero-bg-scroll"
+            style="background-image: url('/images/main-slider/slide11.jpg')"
+          ></div>
+          <div class="hero-content">
+            <div class="container">
+              <div class="row min-vh-100">
+                <!-- Coming Soon Information
+          ============================== -->
+                <div class="col-lg-8 align-items-center d-flex flex-column">
+                  <div class="row py-5 my-auto text-center text-lg-start">
+                    <div class="col-12 mx-auto">
+                      <h1 class="titlee">Monsoon Bonanza</h1>
+                      <h2 class="main-titlee">
                         Enjoy safe & Trouble free Monsoon with us
-                      </h3>
+                      </h2>
                     </div>
-                    <div class="bottom-info">
-                      <h3 data-swiper-parallax="-300">
+                    <div class="col-md-8 col-lg-9 col-xl-8 me-lg-auto ms-lg-0">
+                      <p class="infoo">
                         1. Free 20 Points Monsoon Checkup, Car Wash & car
-                        Sanitization by Global Brand @ Local Cost Rs.1099
-                      </h3>
-                      <h3 data-swiper-parallax="-200">
+                        Sanitization by Global Brand @ Local Cost Rs.1099<br />
                         2. General Paid Service with 40 points Comprehensive
-                        check and Eng.Oil & Oil Filter Repl.Starts From Rs.1999
-                      </h3>
-                      <h3 data-swiper-parallax="-100">
-                        3. Per Panel Painting Starts From Rs.2199
-                      </h3>
-                      <h3 data-swiper-parallax="-50">
+                        check and Eng.Oil & Oil Filter Repl.Starts From
+                        Rs.1999<br />
+                        3. Per Panel Painting Starts From Rs.2199<br />
                         4. Interior & Exterior Polish - Combo Offer Starts
                         Rs.1999
-                      </h3>
+                      </p>
                     </div>
                   </div>
-                  <div class="right-info">
-                    <form class="form-style-9">
-                      <h3>Make an Appoinment</h3>
-                      <ul>
-                        <li>
+                </div>
+                <!-- Coming Soon Information End -->
+
+                <!-- Contact Us
+          ========================= -->
+                <div class="col-lg-4 my-auto py-lg-5">
+                  <div
+                    class="row bg-light rounded text-center mx-0 py-4 mb-4 mb-lg-0"
+                  >
+                    <div class="col-11 mx-auto">
+                      <h3 class="fw-600 mb-3 mt-3">Contact Us</h3>
+                      <p class="text-black-50 mb-4">
+                        For Customer Support, Send us a note.
+                      </p>
+                      <!-- Contact Form -->
+                      <form
+                        id="contact-form"
+                        action="php/mail.php"
+                        method="post"
+                      >
+                        <div class="mb-3">
                           <input
+                            id="name"
+                            name="name"
                             type="text"
-                            name="field1"
-                            class="field-style field-split align-left"
-                            placeholder="Name"
+                            class="form-control border-2"
+                            placeholder="Enter Your Name"
+                            required
                           />
+                        </div>
+                        <div class="mb-3">
                           <input
+                            id="email"
+                            name="email"
                             type="email"
-                            name="field2"
-                            class="field-style field-split align-right"
-                            placeholder="Email"
+                            class="form-control border-2"
+                            placeholder="Enter Your Email"
+                            required
                           />
-                        </li>
-                        <li>
-                          <input
-                            type="text"
-                            name="field3"
-                            class="field-style field-split align-left"
-                            placeholder="Phone"
-                          />
-                          <input
-                            type="url"
-                            name="field4"
-                            class="field-style field-split align-right"
-                            placeholder="Website"
-                          />
-                        </li>
-                        <li>
-                          <input
-                            type="text"
-                            name="field3"
-                            class="field-style field-full align-none"
-                            placeholder="Subject"
-                          />
-                        </li>
-                        <li>
+                        </div>
+                        <div class="mb-3">
                           <textarea
-                            name="field5"
-                            class="field-style"
-                            placeholder="Message"
+                            id="form-message"
+                            name="form-message"
+                            class="form-control border-2"
+                            rows="2"
+                            placeholder="Enter Your Query"
+                            required
                           ></textarea>
-                        </li>
-                        <li>
-                          <input type="submit" value="Send Message" />
-                        </li>
-                      </ul>
-                    </form>
+                        </div>
+                        <div class="d-grid mt-4">
+                          <button
+                            id="submit-btn"
+                            class="btn btn-primary"
+                            type="submit"
+                          >
+                            Send Message
+                          </button>
+                        </div>
+                      </form>
+                      <!-- Contact Form end -->
+                    </div>
                   </div>
                 </div>
+                <!-- Contact Us End -->
               </div>
-            </div>
-            <div class="bottom-aside">
-              <!-- <div class="swiper-button-arrow">
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div> -->
             </div>
           </div>
         </div>
-        <!-- Hero section end-->
         <!-- About section Start -->
         <div
           class="section-full content-inner overlay-white-dark"
@@ -286,7 +292,7 @@
             </div>
             <div class="row">
               <div
-                class="col-md-6 col-lg-4 col-sm-6 m-b30 wow fadeInUp"
+                class="col-md-6 col-lg-4 col-sm-12 m-b30 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="0.4s"
               >
@@ -313,7 +319,7 @@
                 </div>
               </div>
               <div
-                class="col-md-6 col-lg-4 col-sm-6 m-b30 wow fadeInUp"
+                class="col-md-6 col-lg-4 col-sm-12 m-b30 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="0.6s"
               >
@@ -477,6 +483,8 @@
                           >
                         </h3>
                       </div>
+                    </div>
+                    <div class="dlab-post-infoo">
                       <div class="dlab-post-metaa">
                         <ul>
                           <li class="post-date">
@@ -522,6 +530,8 @@
                           </a>
                         </h3>
                       </div>
+                    </div>
+                    <div class="dlab-post-infoo">
                       <div class="dlab-post-metaa">
                         <ul>
                           <li class="post-date">
@@ -566,7 +576,10 @@
                           </a>
                         </h3>
                       </div>
-                      <div class="dlab-post-metaa" style="margin-top: 38px">
+                    </div>
+
+                    <div class="dlab-post-infoo">
+                      <div class="dlab-post-metaa">
                         <ul>
                           <li class="post-date">
                             <span> Start from INR</span>
@@ -611,6 +624,8 @@
                           >
                         </h3>
                       </div>
+                    </div>
+                    <div class="dlab-post-infoo">
                       <div class="dlab-post-metaa">
                         <ul>
                           <li class="post-date">
@@ -655,7 +670,9 @@
                           </a>
                         </h3>
                       </div>
-                      <div class="dlab-post-metaa" style="margin-top: 40px">
+                    </div>
+                    <div class="dlab-post-infoo">
+                      <div class="dlab-post-metaa">
                         <ul>
                           <li class="post-date">
                             <span> Start from INR</span>
@@ -699,7 +716,9 @@
                           </a>
                         </h3>
                       </div>
-                      <div class="dlab-post-metaa" style="margin-top: 40px">
+                    </div>
+                    <div class="dlab-post-infoo">
+                      <div class="dlab-post-metaa">
                         <ul>
                           <li class="post-date">
                             <span> Start from INR</span>
@@ -744,7 +763,9 @@
                           </a>
                         </h3>
                       </div>
-                      <div class="dlab-post-metaa" style="margin-top: 7px">
+                    </div>
+                    <div class="dlab-post-infoo">
+                      <div class="dlab-post-metaa">
                         <ul>
                           <li class="post-date">
                             <span> Start from INR</span>
@@ -788,7 +809,9 @@
                           </a>
                         </h3>
                       </div>
-                      <div class="dlab-post-metaa" style="margin-top: 75px">
+                    </div>
+                    <div class="dlab-post-infoo">
+                      <div class="dlab-post-metaa">
                         <ul>
                           <li class="post-date">
                             <span> Start from INR</span>
@@ -832,7 +855,9 @@
                           </a>
                         </h3>
                       </div>
-                      <div class="dlab-post-metaa" style="margin-top: 42px">
+                    </div>
+                    <div class="dlab-post-infoo">
+                      <div class="dlab-post-metaa">
                         <ul>
                           <li class="post-date">
                             <span> Start from INR</span>
@@ -866,7 +891,7 @@
             </div>
             <div class="row">
               <div
-                class="col-lg-3 col-md-5 col-sm-5 wow fadeInUp"
+                class="col-lg-3 col-md-3 col-sm-5 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="0.2s"
               >
@@ -883,7 +908,7 @@
                 </div>
               </div>
               <div
-                class="col-lg-3 col-md-5 col-sm-5 wow fadeInUp"
+                class="col-lg-3 col-md-3 col-sm-5 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="0.4s"
               >
@@ -903,7 +928,7 @@
                 </div>
               </div>
               <div
-                class="col-lg-3 col-md-5 col-sm-5 wow fadeInUp"
+                class="col-lg-3 col-md-3 col-sm-5 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="0.6s"
               >
@@ -922,7 +947,7 @@
                 </div>
               </div>
               <div
-                class="col-lg-3 col-md-5 col-sm-5 wow fadeInUp"
+                class="col-lg-3 col-md-3 col-sm-5 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="0.8s"
               >
@@ -939,7 +964,7 @@
                 </div>
               </div>
               <div
-                class="col-lg-3 col-md-5 col-sm-5 wow fadeInUp"
+                class="col-lg-3 col-md-3 col-sm-5 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="1.0s"
               >
@@ -961,7 +986,7 @@
                 </div>
               </div>
               <div
-                class="col-lg-3 col-md-5 col-sm-5 wow fadeInUp"
+                class="col-lg-3 col-md-3 col-sm-5 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="1.2s"
               >
@@ -980,7 +1005,7 @@
                 </div>
               </div>
               <div
-                class="col-lg-3 col-md-5 col-sm-5 wow fadeInUp"
+                class="col-lg-3 col-md-3 col-sm-5 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="1.2s"
               >
@@ -997,7 +1022,7 @@
                 </div>
               </div>
               <div
-                class="col-lg-3 col-md-5 col-sm-5 wow fadeInUp"
+                class="col-lg-3 col-md-3 col-sm-5 wow fadeInUp"
                 data-wow-duration="2s"
                 data-wow-delay="1.2s"
               >
@@ -1312,9 +1337,7 @@
                         operation Manager :
                       </span>
                       <a href="tel:+917090009537">7090009537 </a
-                      ><a href="tel:+919108826199" style="padding-left: 137px"
-                        >9108826199</a
-                      >
+                      ><a href="tel:+919108826199">9108826199</a>
                     </li>
                   </ul>
                 </div>

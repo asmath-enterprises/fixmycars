@@ -1,0 +1,19 @@
+@media only screen and (max-width: 1199px) {
+  .service-box3 .dlab-info {
+    min-height: 465px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-box3 .dlab-info {
+    min-height: 295px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .titlee {
+    font-size: 33px;
+  }
+  .main-titlee {
+    font-size: 18px;
+  }
+}
