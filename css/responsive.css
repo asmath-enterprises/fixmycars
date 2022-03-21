@@ -1,8 +1,36 @@
+@media only screen and (max-width: 7000px) {
+  .header-sidenav .header-nav.full-sidenav .nav > .insider {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1199px) {
+  .dlab-post-infoo {
+    padding-top: 80px;
+  }
   .service-box3 .dlab-info {
     min-height: 465px;
   }
+  .header-creative-one .extra-nav {
+    padding: 14px 3px 0px 0;
+  }
 }
+@media only screen and (max-width: 991px) {
+  .dlab-post-infoo {
+    padding-top: 45px;
+  }
+}
+@media only screen and (max-width: 905px) {
+  .mini-header-bar {
+    display: none;
+  }
+  .menu-aside .menu-btn {
+    top: 0px;
+  }
+  .header-sidenav .header-nav.full-sidenav .nav > .insider {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .service-box3 .dlab-info {
     min-height: 295px;
